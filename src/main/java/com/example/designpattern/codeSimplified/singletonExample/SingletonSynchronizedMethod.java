@@ -7,6 +7,7 @@ public class SingletonSynchronizedMethod {
     }
 
     public static synchronized   SingletonSynchronizedMethod getSingletonLazy() {
+        //why read is made thread safe , no need for read
         if(singletonSynchronizedMethod==null){
             singletonSynchronizedMethod = new SingletonSynchronizedMethod();
         }

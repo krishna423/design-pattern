@@ -17,11 +17,18 @@ public class SingletonMain {
 //        SingletonEager singletonEager1 = SingletonEager.getSingletonLazy();
 //        System.out.println(singletonEager1);
 
-        SingletonSynchronizedMethod singletonSynchronizedMethod = SingletonSynchronizedMethod.getSingletonLazy();
-        System.out.println(singletonSynchronizedMethod);
+//        SingletonSynchronizedMethod singletonSynchronizedMethod = SingletonSynchronizedMethod.getSingletonLazy();
+//        System.out.println(singletonSynchronizedMethod);
+//
+//        SingletonSynchronizedMethod singletonSynchronizedMethod1 = SingletonSynchronizedMethod.getSingletonLazy();
+//        System.out.println(singletonSynchronizedMethod1);
 
-        SingletonSynchronizedMethod singletonSynchronizedMethod1 = SingletonSynchronizedMethod.getSingletonLazy();
-        System.out.println(singletonSynchronizedMethod1);
+        SingletonSynchronizedBlock singletonSynchronizedBlock = SingletonSynchronizedBlock.getInstance();
+        System.out.println(singletonSynchronizedBlock);
+
+        SingletonSynchronizedBlock singletonSynchronizedBlock1 = SingletonSynchronizedBlock.getInstance();
+        System.out.println(singletonSynchronizedBlock1);
+
 
 
 

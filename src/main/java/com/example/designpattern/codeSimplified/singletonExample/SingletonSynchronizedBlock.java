@@ -1,16 +1,20 @@
 package com.example.designpattern.codeSimplified.singletonExample;
 
-public class SingletonSynchronizedMethod {
-    private static SingletonSynchronizedMethod singletonSynchronizedMethod ;
+public class SingletonSynchronizedBlock {
+    private static SingletonSynchronizedBlock instance;
 
-    private SingletonSynchronizedMethod(){
+    private SingletonSynchronizedBlock(){
     }
 
-    public static synchronized   SingletonSynchronizedMethod getSingletonLazy() {
-        if(singletonSynchronizedMethod==null){
-            singletonSynchronizedMethod = new SingletonSynchronizedMethod();
+    public static SingletonSynchronizedBlock getInstance() {
+        if(instance ==null){
+            synchronized (SingletonSynchronizedBlock.class){
+                if(instance == null){
+                    instance = new SingletonSynchronizedBlock();
+                }
+            }
         }
-        return singletonSynchronizedMethod;
+        return instance;
     }
 
 }
