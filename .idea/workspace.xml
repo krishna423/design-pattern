@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/EmailClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/FactoryPatternMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/INotificationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/NotificationTypeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/SMSClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonEager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonEager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonSynchronizedMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonSynchronizedMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -60,7 +64,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.SingletonMain">
+  <component name="RunManager" selected="Application.FactoryPatternMain">
     <configuration name="DesignPatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_212" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -69,6 +73,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.designpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FactoryPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.factoryDesignPattern.FactoryPatternMain" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.factoryDesignPattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,11 +109,13 @@
     <list>
       <item itemvalue="Application.DesignPatternApplication" />
       <item itemvalue="Application.SingletonMain" />
+      <item itemvalue="Application.FactoryPatternMain" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SingletonMain" />
+        <item itemvalue="Application.FactoryPatternMain" />
         <item itemvalue="Application.DesignPatternApplication" />
+        <item itemvalue="Application.SingletonMain" />
       </list>
     </recent_temporary>
   </component>
