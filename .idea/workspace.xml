@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/EmailClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/FactoryPatternMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/INotificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/NotificationTypeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/factoryDesignPattern/SMSClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/builderPattern/Vehicle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/builderPattern/builderPatternMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,7 +60,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.FactoryPatternMain">
+  <component name="RunManager" selected="Application.builderPatternMain">
     <configuration name="DesignPatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_212" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -106,13 +102,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="builderPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.builderPattern.builderPatternMain" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.builderPattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.DesignPatternApplication" />
       <item itemvalue="Application.SingletonMain" />
       <item itemvalue="Application.FactoryPatternMain" />
+      <item itemvalue="Application.builderPatternMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.builderPatternMain" />
         <item itemvalue="Application.FactoryPatternMain" />
         <item itemvalue="Application.DesignPatternApplication" />
         <item itemvalue="Application.SingletonMain" />
@@ -177,6 +188,31 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonMain.java</url>
           <line>24</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/builderPattern/builderPatternMain.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/builderPattern/builderPatternMain.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/builderPattern/Vehicle.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/builderPattern/Vehicle.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/builderPattern/Vehicle.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
