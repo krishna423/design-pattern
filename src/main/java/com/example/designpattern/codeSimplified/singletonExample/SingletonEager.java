@@ -6,7 +6,7 @@ public class SingletonEager {
     private SingletonEager(){
     }
 
-    public static SingletonEager getSingletonLazy() {
+    public static SingletonEager getSingletonEager() {
         return singletonEager;
     }
 

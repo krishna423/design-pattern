@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonSynchronizedBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonEager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonEager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonSynchronizedMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonSynchronizedMethod.java" afterDir="false" />
     </list>
@@ -130,11 +130,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonMain.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonLazy.java</url>
           <line>9</line>
           <option name="timeStamp" value="2" />
@@ -158,6 +153,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonSynchronizedBlock.java</url>
           <line>9</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/singletonExample/SingletonMain.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
