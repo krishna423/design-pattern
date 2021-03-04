@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/ShapeFacadeHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/facadePatternMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/CompositeAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/CompositeDesinPatternMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/CurrentAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/SavingAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +90,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.designpattern.codeSimplified.CompositePattern" />
       <recent name="com.example.designpattern.codeSimplified.facadePattern" />
       <recent name="com.example.designpattern.codeSimplified.proxyPattern" />
       <recent name="com.example.designpattern.codeSimplified.singletonExample" />
@@ -101,13 +101,13 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.facadePatternMain">
-    <configuration name="FactoryPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.factoryDesignPattern.FactoryPatternMain" />
+  <component name="RunManager" selected="Application.CompositeDesinPatternMain">
+    <configuration name="CompositeDesinPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.CompositePattern.CompositeDesinPatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.factoryDesignPattern.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.CompositePattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,19 +168,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.FactoryPatternMain" />
       <item itemvalue="Application.builderPatternMain" />
       <item itemvalue="Application.PrototypePatternMain" />
       <item itemvalue="Application.proxyPatternMain" />
       <item itemvalue="Application.facadePatternMain" />
+      <item itemvalue="Application.CompositeDesinPatternMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CompositeDesinPatternMain" />
         <item itemvalue="Application.facadePatternMain" />
         <item itemvalue="Application.proxyPatternMain" />
         <item itemvalue="Application.PrototypePatternMain" />
         <item itemvalue="Application.builderPatternMain" />
-        <item itemvalue="Application.FactoryPatternMain" />
       </list>
     </recent_temporary>
   </component>
