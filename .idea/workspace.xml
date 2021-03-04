@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/DBInteractionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/DBInteractionDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/DBInteractionProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/proxyPatternMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/ShapeFacadeHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/facadePattern/facadePatternMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +91,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.designpattern.codeSimplified.facadePattern" />
       <recent name="com.example.designpattern.codeSimplified.proxyPattern" />
       <recent name="com.example.designpattern.codeSimplified.singletonExample" />
     </key>
@@ -98,22 +101,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.proxyPatternMain">
-    <configuration name="DesignPatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_212" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.DesignPatternApplication" />
-      <module name="design-pattern" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.designpattern.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.facadePatternMain">
     <configuration name="FactoryPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.factoryDesignPattern.FactoryPatternMain" />
       <module name="design-pattern" />
@@ -153,6 +141,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="facadePatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.facadePattern.facadePatternMain" />
+      <module name="design-pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.facadePattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="proxyPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.proxyPattern.proxyPatternMain" />
       <module name="design-pattern" />
@@ -167,19 +168,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DesignPatternApplication" />
       <item itemvalue="Application.FactoryPatternMain" />
       <item itemvalue="Application.builderPatternMain" />
       <item itemvalue="Application.PrototypePatternMain" />
       <item itemvalue="Application.proxyPatternMain" />
+      <item itemvalue="Application.facadePatternMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.facadePatternMain" />
         <item itemvalue="Application.proxyPatternMain" />
         <item itemvalue="Application.PrototypePatternMain" />
         <item itemvalue="Application.builderPatternMain" />
         <item itemvalue="Application.FactoryPatternMain" />
-        <item itemvalue="Application.DesignPatternApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -282,6 +283,10 @@
           <line>16</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="18" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
