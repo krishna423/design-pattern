@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/CompositeAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/CompositeDesinPatternMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/CurrentAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/CompositePattern/SavingAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/CheezBurstDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/DecoratorPatternMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/ExtraCronDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/LargePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/MediumPizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/PizzaDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/SmallPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +94,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.designpattern.codeSimplified.DecoratorPattern" />
       <recent name="com.example.designpattern.codeSimplified.CompositePattern" />
       <recent name="com.example.designpattern.codeSimplified.facadePattern" />
       <recent name="com.example.designpattern.codeSimplified.proxyPattern" />
@@ -101,7 +106,7 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.CompositeDesinPatternMain">
+  <component name="RunManager" selected="Application.DecoratorPatternMain">
     <configuration name="CompositeDesinPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.CompositePattern.CompositeDesinPatternMain" />
       <module name="design-pattern" />
@@ -115,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrototypePatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.prototypePattern.PrototypePatternMain" />
+    <configuration name="DecoratorPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.DecoratorPattern.DecoratorPatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.prototypePattern.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.DecoratorPattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="builderPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.builderPattern.builderPatternMain" />
+    <configuration name="PrototypePatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.prototypePattern.PrototypePatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.builderPattern.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.prototypePattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,19 +173,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.builderPatternMain" />
       <item itemvalue="Application.PrototypePatternMain" />
       <item itemvalue="Application.proxyPatternMain" />
       <item itemvalue="Application.facadePatternMain" />
       <item itemvalue="Application.CompositeDesinPatternMain" />
+      <item itemvalue="Application.DecoratorPatternMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DecoratorPatternMain" />
         <item itemvalue="Application.CompositeDesinPatternMain" />
         <item itemvalue="Application.facadePatternMain" />
         <item itemvalue="Application.proxyPatternMain" />
         <item itemvalue="Application.PrototypePatternMain" />
-        <item itemvalue="Application.builderPatternMain" />
       </list>
     </recent_temporary>
   </component>
@@ -282,6 +287,31 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/DBInteractionProxy.java</url>
           <line>16</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/PizzaDecorator.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/DecoratorPatternMain.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/DecoratorPatternMain.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/CheezBurstDecorator.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/DecoratorPatternMain.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.RuntimeException" package="java.lang" />
