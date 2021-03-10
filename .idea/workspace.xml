@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/AdapterPatternMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/BirdAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/PlasticDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/Sparrow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/ToyDuck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,12 +52,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="practice" />
+                    <option name="lastUsedInstant" value="1614839272" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1614838045" />
+                    <option name="lastUsedInstant" value="1614838513" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1614838044" />
+                    <option name="lastUsedInstant" value="1614838362" />
                   </RecentBranch>
                 </list>
               </option>
@@ -82,7 +91,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.designpattern.codeSimplified.singletonExample" />
+      <recent name="com.example.designpattern.codeSimplified.flyweightPattern" />
+      <recent name="com.example.designpattern.codeSimplified.DecoratorPattern" />
+      <recent name="com.example.designpattern.codeSimplified.CompositePattern" />
+      <recent name="com.example.designpattern.codeSimplified.facadePattern" />
+      <recent name="com.example.designpattern.codeSimplified.proxyPattern" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -90,15 +103,13 @@
       <command value="mvn compile" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.DesignPatternApplication">
-    <configuration name="DesignPatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_212" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.DesignPatternApplication" />
+  <component name="RunManager" selected="Application.AdapterPatternMain">
+    <configuration name="AdapterPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.adapterPattern.AdapterPatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.adapterPattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactoryPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.factoryDesignPattern.FactoryPatternMain" />
+    <configuration name="CompositeDesinPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.CompositePattern.CompositeDesinPatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.factoryDesignPattern.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.CompositePattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrototypePatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.prototypePattern.PrototypePatternMain" />
+    <configuration name="DecoratorPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.DecoratorPattern.DecoratorPatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.prototypePattern.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.DecoratorPattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingletonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.singletonExample.SingletonMain" />
+    <configuration name="FlyweightPattrenMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.flyweightPattern.FlyweightPattrenMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.singletonExample.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.flyweightPattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="builderPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.builderPattern.builderPatternMain" />
+    <configuration name="facadePatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.facadePattern.facadePatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.builderPattern.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.facadePattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,19 +170,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DesignPatternApplication" />
-      <item itemvalue="Application.SingletonMain" />
-      <item itemvalue="Application.FactoryPatternMain" />
-      <item itemvalue="Application.builderPatternMain" />
-      <item itemvalue="Application.PrototypePatternMain" />
+      <item itemvalue="Application.facadePatternMain" />
+      <item itemvalue="Application.CompositeDesinPatternMain" />
+      <item itemvalue="Application.DecoratorPatternMain" />
+      <item itemvalue="Application.FlyweightPattrenMain" />
+      <item itemvalue="Application.AdapterPatternMain" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrototypePatternMain" />
-        <item itemvalue="Application.builderPatternMain" />
-        <item itemvalue="Application.FactoryPatternMain" />
-        <item itemvalue="Application.DesignPatternApplication" />
-        <item itemvalue="Application.SingletonMain" />
+        <item itemvalue="Application.AdapterPatternMain" />
+        <item itemvalue="Application.FlyweightPattrenMain" />
+        <item itemvalue="Application.DecoratorPatternMain" />
+        <item itemvalue="Application.CompositeDesinPatternMain" />
+        <item itemvalue="Application.facadePatternMain" />
       </list>
     </recent_temporary>
   </component>
@@ -259,6 +270,50 @@
           <line>59</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/proxyPatternMain.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/DBInteractionProxy.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/DBInteractionProxy.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/PizzaDecorator.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/DecoratorPatternMain.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/DecoratorPatternMain.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/CheezBurstDecorator.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/DecoratorPatternMain.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="18" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
