@@ -83,7 +83,7 @@
 		<repository>
 			<id>internal.repo</id>
 			<name>Internal repo</name>
-			<url>file:///home/krishnakumarmaurya/artifacts</url>
+			<url>file:///tmp/artifacts</url>
 		</repository>
 	</distributionManagement>
 
