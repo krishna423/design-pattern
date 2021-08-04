@@ -79,4 +79,12 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Internal repo</name>
+			<url>file:///home/krishnakumarmaurya/artifacts</url>
+		</repository>
+	</distributionManagement>
+
 </project>
