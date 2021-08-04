@@ -3,7 +3,7 @@
 mvn clean install -U
 
 if commandExecutor  ". docker/getversion.sh";then
-  search './target/' "bank-oauth-service.jar"
+  search './target/' "design-pattern.jar"
 else
   ret 1
 fi
