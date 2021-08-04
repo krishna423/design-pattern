@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern/BridgePatternMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern/NewRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern/OldRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern/PhilipsTV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern/Remote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern/SonyTV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern/TV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile_test" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile_test" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
