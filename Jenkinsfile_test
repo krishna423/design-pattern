@@ -26,7 +26,7 @@ node{
     stage('Build'){
         withMaven(maven: 'Maven', jdk:'java8') {
             echo "Running Build Environment"
-            sh 'subscription-backend/docker/build.sh'
+            sh 'docker/build.sh'
             echo "Build done"
         }
     }
