@@ -1,5 +1,7 @@
 #!groovy
 def jobName = 'test-project'
+def SERVER_CRED = credentials("test_cred")
+
 node{
 
     deleteDir()
@@ -7,7 +9,13 @@ node{
     stage('Pre Build'){
         try{
             checkout scm
-            echo "Cloning code from git branch ${env.BRANCH_NAME}"
+            echo "Cloning code from git branch ${env.BRANCH_NAME} for user : ${env.SERVER_CRED}"
+
+            withCredentials([
+                    userNamePassword( credentials : 'test_cred' , userNameVariable : USER , passwordVariable : PWD)
+            ]){
+                echo "get username and password : ${USER} , ${PWD}"
+            }
         }
         catch (exc){
             echo "unable to pull code from branch ${env.BRANCH_NAME}"
