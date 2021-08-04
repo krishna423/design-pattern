@@ -25,10 +25,7 @@ node{
 
     stage('Build'){
         try{
-         #!   withMaven(maven: 'Maven', jdk:'java8') {
-            #!       echo "Running Build Environment"
-            #!    sh 'docker/build.sh'
-            #!    }
+            echo "Build started "
         }
         catch (exc){
             echo "Build failed"
@@ -39,9 +36,7 @@ node{
     stage('Package'){
         try{
             echo 'creating docker image'
-            #!    gitCommit = gitCommitId()
-            #!sh "docker/package.sh ${gitCommit}"
-            #!echo 'Docker Image created successfully'
+
         }
         catch (exc){
             echo "Docker Image creation failed"
@@ -52,8 +47,6 @@ node{
     stage('Push'){
         try{
             echo "Pushing the image to repo"
-            #!gitCommit = gitCommitId()
-            #!sh "docker/push.sh ${gitCommit}"
             echo "Docker image pushed successfully in the repo"
         }
         catch(exc){
