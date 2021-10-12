@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/AdapterPatternMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/Bird.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/BirdAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/PlasticDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/Sparrow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/adapterPattern/ToyDuck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/Glass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/Juice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/Liquid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/Water.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/basicExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,23 +87,30 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.designpattern.codeSimplified.bridgePattern" />
       <recent name="com.example.designpattern.codeSimplified.flyweightPattern" />
       <recent name="com.example.designpattern.codeSimplified.DecoratorPattern" />
       <recent name="com.example.designpattern.codeSimplified.CompositePattern" />
       <recent name="com.example.designpattern.codeSimplified.facadePattern" />
-      <recent name="com.example.designpattern.codeSimplified.proxyPattern" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn compile" />
+      <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.AdapterPatternMain">
+  <component name="RunManager" selected="Application.basicExample">
     <configuration name="AdapterPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.adapterPattern.AdapterPatternMain" />
       <module name="design-pattern" />
@@ -117,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CompositeDesinPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.CompositePattern.CompositeDesinPatternMain" />
+    <configuration name="BridgePatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.bridgePattern.BridgePatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.CompositePattern.*" />
+          <option name="PATTERN" value="com.example.designpattern.codeSimplified.bridgePattern.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="facadePatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.facadePattern.facadePatternMain" />
+    <configuration name="basicExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.generics.basicExampleWithOutGenerics.basicExample" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.designpattern.codeSimplified.facadePattern.*" />
+          <option name="PATTERN" value="com.example.generics.basicExampleWithOutGenerics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,19 +177,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.facadePatternMain" />
-      <item itemvalue="Application.CompositeDesinPatternMain" />
       <item itemvalue="Application.DecoratorPatternMain" />
       <item itemvalue="Application.FlyweightPattrenMain" />
       <item itemvalue="Application.AdapterPatternMain" />
+      <item itemvalue="Application.BridgePatternMain" />
+      <item itemvalue="Application.basicExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.basicExample" />
+        <item itemvalue="Application.BridgePatternMain" />
         <item itemvalue="Application.AdapterPatternMain" />
         <item itemvalue="Application.FlyweightPattrenMain" />
         <item itemvalue="Application.DecoratorPatternMain" />
-        <item itemvalue="Application.CompositeDesinPatternMain" />
-        <item itemvalue="Application.facadePatternMain" />
       </list>
     </recent_temporary>
   </component>
