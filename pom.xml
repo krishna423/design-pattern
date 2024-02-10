@@ -13,37 +13,333 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>design-pattern</name>
 	<description>Demo project for Spring Boot</description>
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
+<!--	<properties>-->
+<!--		<java.version>1.8</java.version>-->
+<!--	</properties>-->
+<!--	<dependencies>-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter</artifactId>-->
+<!--		</dependency>-->
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-test</artifactId>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
+<!--	</dependencies>-->
 
-	<build>
-		<plugins>
-			<plugin>
+<!--	<build>-->
+<!--		<plugins>-->
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <source>8</source>-->
+<!--                    <target>8</target>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--	</build>-->
+
+
+
+
+
+
+
+
+
+
+		<packaging>jar</packaging>
+
+
+
+		<properties>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+			<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+			<java.version>17</java.version>
+			<lombok.version>1.18.22</lombok.version>
+			<flyway.version>5.2.4</flyway.version>
+			<apache.commons.version>3.7</apache.commons.version>
+			<pbcommons.version>1.1.65-SNAPSHOT</pbcommons.version>
+			<hibernate-types.version>2.1.1</hibernate-types.version>
+			<datadog.version>2.3</datadog.version>
+			<spring-kafka.version>2.8.4</spring-kafka.version>
+			<mvel.version>2.4.4.Final</mvel.version>
+			<log4j.version>2.17.1</log4j.version>
+			<aws.sdk.version>1.11.998</aws.sdk.version>
+		</properties>
+
+		<dependencies>
+			<dependency>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-	</build>
+				<artifactId>spring-boot-starter</artifactId>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<scope>test</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-cache</artifactId>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+			</dependency>
 
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${apache.commons.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-security</artifactId>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-jpa</artifactId>
+				<exclusions>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>8.0.28</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-jdbc</artifactId>
+				<!-- Excluding Tomcat Connection pooling in order to use HikariCP -->
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.tomcat</groupId>
+						<artifactId>tomcat-jdbc</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.springframework.boot</groupId>
+						<artifactId>spring-boot-starter-logging</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-log4j2</artifactId>
+				<exclusions>
+					<exclusion>
+						<groupId>org.apache.logging.log4j</groupId>
+						<artifactId>log4j-core</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.logging.log4j</groupId>
+						<artifactId>log4j-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.logging.log4j</groupId>
+						<artifactId>log4j-jul</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.logging.log4j</groupId>
+						<artifactId>log4j-slf4j-impl</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-jul</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-slf4j-impl</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jul-to-slf4j</artifactId>
+				<version>1.7.25</version>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>log4j-over-slf4j</artifactId>
+				<version>1.7.25</version>
+				<scope>compile</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.vladmihalcea</groupId>
+				<artifactId>hibernate-types-5</artifactId>
+				<version>${hibernate-types.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.8.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.zaxxer</groupId>
+				<artifactId>HikariCP</artifactId>
+				<version>3.3.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.aerospike</groupId>
+				<artifactId>aerospike-client</artifactId>
+				<version>5.1.9</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/commons-validator/commons-validator -->
+			<dependency>
+				<groupId>commons-validator</groupId>
+				<artifactId>commons-validator</artifactId>
+				<version>1.6</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.kafka</groupId>
+				<artifactId>spring-kafka</artifactId>
+				<version>${spring-kafka.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-ui</artifactId>
+				<version>1.6.8</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>4.5.13</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-envers</artifactId>
+				<version>5.6.11.Final</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+			</dependency>
+
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.18.22</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.7</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>4.5.13</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<scope>test</scope>
+			</dependency>
+
+
+		</dependencies>
+
+		<build>
+			<finalName>design patetrn</finalName>
+			<resources>
+				<!--A "flyway" directory has been added as a separate resources folder.
+                This has been done as the migrations folder was not being included in target when
+                placed inside resources. This should be fixed-->
+				<resource>
+					<filtering>true</filtering>
+					<directory>src/main/resources</directory>
+					<!--<targetPath>../</targetPath> to -->
+					<includes>
+						<include>*.properties</include>
+						<include>static/*</include>
+						<include>templates/*</include>
+						<include>log4j2*</include>
+						<include>version</include>
+						<include>caches/*</include>
+						<include>datastores/*</include>
+					</includes>
+				</resource>
+			</resources>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+				<plugin>
+					<groupId>pl.project13.maven</groupId>
+					<artifactId>git-commit-id-plugin</artifactId>
+					<version>2.2.1</version>
+					<configuration>
+						<injectAllReactorProjects>true</injectAllReactorProjects>
+					</configuration>
+				</plugin>
+			</plugins>
+		</build>
 </project>
