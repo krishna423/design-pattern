@@ -27,6 +27,11 @@ public class SingletonMain {
         SingletonSynchronizedBlock singletonSynchronizedBlock1 = SingletonSynchronizedBlock.getInstance();
         System.out.println(singletonSynchronizedBlock1);
 
+        SingletonSynchronizedBlockWithVolatile singletonSynchronizedBlockWithVolatile1 = SingletonSynchronizedBlockWithVolatile.getInstance();
+        System.out.println(singletonSynchronizedBlockWithVolatile1);
+        SingletonSynchronizedBlockWithVolatile singletonSynchronizedBlockWithVolatile2 = SingletonSynchronizedBlockWithVolatile.getInstance();
+        System.out.println(singletonSynchronizedBlockWithVolatile2);
+
 
 
 
