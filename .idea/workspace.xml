@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8141f5-3b0e-401c-baf3-67c32c0774fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/Glass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/Juice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/Liquid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/Water.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/generics/basicExample/basicExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/PlayerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/Robot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/WeaponType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/WorkingPlayerProperty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/CounterTerrorist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/CounterTerrorist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/FlyweightPattrenMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/FlyweightPatternMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/PlayerFlywieghtFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/PlayerFlywieghtFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/Terrorist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/flyweightPattern/Terrorist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -72,6 +77,12 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="1pCXT3zTwGzNjA16VTD4P4SIZTi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -80,18 +91,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.FlyweightPatternMain.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/bridgePattern" />
@@ -110,7 +116,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.basicExample">
+  <component name="RunManager" selected="Application.FlyweightPatternMain">
     <configuration name="AdapterPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.adapterPattern.AdapterPatternMain" />
       <module name="design-pattern" />
@@ -150,8 +156,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlyweightPattrenMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.flyweightPattern.FlyweightPattrenMain" />
+    <configuration name="FlyweightPatternMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.designpattern.codeSimplified.flyweightPattern.FlyweightPatternMain" />
       <module name="design-pattern" />
       <extension name="coverage">
         <pattern>
@@ -178,20 +184,27 @@
     </configuration>
     <list>
       <item itemvalue="Application.DecoratorPatternMain" />
-      <item itemvalue="Application.FlyweightPattrenMain" />
+      <item itemvalue="Application.FlyweightPatternMain" />
       <item itemvalue="Application.AdapterPatternMain" />
       <item itemvalue="Application.BridgePatternMain" />
       <item itemvalue="Application.basicExample" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FlyweightPatternMain" />
         <item itemvalue="Application.basicExample" />
         <item itemvalue="Application.BridgePatternMain" />
         <item itemvalue="Application.AdapterPatternMain" />
-        <item itemvalue="Application.FlyweightPattrenMain" />
         <item itemvalue="Application.DecoratorPatternMain" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -214,7 +227,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -291,11 +303,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/proxyPattern/DBInteractionProxy.java</url>
           <line>16</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/PizzaDecorator.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/designpattern/codeSimplified/DecoratorPattern/DecoratorPatternMain.java</url>
