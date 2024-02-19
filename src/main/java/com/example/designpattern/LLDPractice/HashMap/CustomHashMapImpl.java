@@ -8,18 +8,22 @@ import static java.lang.Math.abs;
 public class CustomHashMapImpl<K,V> implements CustomHashMap<K,V> {
 
     private int DEFAULT_SIZE=100000;
-    private int getDEFAULT_SIZE= 10;
     private double loadFactor = 20;
-    private int treefy = 4;
+    private int treeifyThreshold = 4;
 
     private int size=0;
     private int capacity ;
 
     private Node<K,V>[] table;
-    public CustomHashMapImpl(int capacity,double loadFactor, int treefy) {
+
+
+    //HashMap internal implementation : Array of Node<K,V> , each node contains a linklist
+
+
+    public CustomHashMapImpl(int capacity,double loadFactor, int treeifyThreshold) {
         this.capacity = capacity;
         this.loadFactor = loadFactor;
-        this.treefy = treefy;
+        this.treeifyThreshold = treeifyThreshold;
         table = new Node[capacity];
         // size 2^n
 
@@ -33,10 +37,10 @@ public class CustomHashMapImpl<K,V> implements CustomHashMap<K,V> {
         Node<K,V> node = table[bucketId];
         if(Objects.isNull(node)){
             table[bucketId] = new Node<>(key,value);
-        }else{
-            Node <K,V> pre = null;
-            while(Objects.nonNull(node)){
-                if(node.getKey() == key){
+        }else {
+            Node<K, V> pre = null;
+            while (Objects.nonNull(node)) {
+                if (node.getKey() == key) {
                     //Node already present
                     return;
                 }
@@ -44,13 +48,21 @@ public class CustomHashMapImpl<K,V> implements CustomHashMap<K,V> {
                 node = node.getNextPointer();
                 countNodesInABucket++;
             }
-            System.out.println(key + " Used bucket : " + bucketId +  " " + countNodesInABucket );
-            Node<K,V> newNode = new Node<>(key,value);
+            System.out.println(key + " Used bucket : " + bucketId + " " + countNodesInABucket);
+            Node<K, V> newNode = new Node<>(key, value);
             pre.setNextPointer(newNode);
-        }
-        size++;
-        if(size > capacity*2*loadFactor || countNodesInABucket>treefy){
-            resize();
+
+            size++;
+            if (size > capacity * loadFactor) {
+                resize();
+            }
+            if (countNodesInABucket > treeifyThreshold) {
+                if (table[bucketId] instanceof TreeNode<K, V>) {
+                    return;
+                }
+                //Convert linklist to TreeNode and create a self-balancing tree for increasing performance in log(countNodesInABucket)
+                treeifyBin(bucketId, countNodesInABucket);
+            }
         }
     }
 
@@ -148,5 +160,40 @@ public class CustomHashMapImpl<K,V> implements CustomHashMap<K,V> {
         }
 
 
+    }
+
+    final void treeifyBin( int bucketId, int noOfNodesInBucket) {
+        System.out.println("Creating DLL for bucketId " + bucketId + " size "  + noOfNodesInBucket);
+        Node<K,V> node = table[bucketId];
+
+        //Create Node<K,V> linklist to TreeNode Doubly linklist
+        TreeNode<K,V> treeNode = null;
+        TreeNode<K,V> preTreeNode = null;
+
+        while (Objects.nonNull(node)){
+            TreeNode<K,V> newTreeNode = convertTreeNodeFromNode(node);
+            if(treeNode == null){
+                treeNode = newTreeNode;
+            }else {
+                newTreeNode.setPreviousPointer(preTreeNode);
+                preTreeNode.setNextPointer(newTreeNode);
+            }
+            preTreeNode = newTreeNode;
+            node = node.getNextPointer();
+        }
+
+        //DLL done
+        //call treefy for creating DLL to map
+        treeify(treeNode,bucketId);
+    }
+
+    final void treeify(TreeNode<K,V> treeNode,int bucketId){
+        //DLL to BST
+        //BST to Red-black tree
+        table[bucketId] = treeNode;
+    }
+
+    private TreeNode<K,V> convertTreeNodeFromNode(Node<K,V> node){
+        return new TreeNode<>(node.getKey(),node.getValue());
     }
 }

@@ -3,7 +3,7 @@ package com.example.designpattern.LLDPractice.HashMap;
 public class CustomConcurrentHashMapDriver {
 
     public static void main(String[] args) {
-        CustomHashMap<String, String> hashMap = new CustomConcurrentHashMapImpl<>(10,.8,5);
+        CustomHashMap<String, String> hashMap = new CustomHashMapImpl<>(10,.8,2);
         hashMap.put("sdsda","3242342");
         hashMap.put("asdasdsda","324232342");
         hashMap.put("scxdsda","32342");
