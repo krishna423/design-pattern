@@ -33,7 +33,11 @@ public class SingletonMain {
         System.out.println(singletonSynchronizedBlockWithVolatile2);
 
 
-
+        System.out.println("Lazy Singleton using inner class ");
+        SingletonLazyUsingInnerClass singletonLazyUsingInnerClass1 = SingletonLazyUsingInnerClass.getSingletonEager();
+        System.out.println(singletonLazyUsingInnerClass1);
+        SingletonLazyUsingInnerClass singletonLazyUsingInnerClass2 = SingletonLazyUsingInnerClass.getSingletonEager();
+        System.out.println(singletonLazyUsingInnerClass2);
 
 
 

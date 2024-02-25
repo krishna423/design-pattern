@@ -1,5 +1,6 @@
-package com.example.designpattern;
+package com.example.designpattern.logics.Spring;
 
+import com.example.designpattern.DesignPatternApplication;
 import com.example.designpattern.LLDPractice.AOP.TestAOPDriver;
 import com.example.designpattern.LLDPractice.AOP.TestServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,20 +9,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-import javax.annotation.Resource;
-import javax.annotation.Resources;
-
 @SpringBootApplication
 @EnableAspectJAutoProxy
-public class DesignPatternApplication {
+public class SpringRunner {
 
-	@Autowired
-	private TestServiceImpl testService;
-	public static void main(String[] args) throws NoSuchMethodException {
-		ApplicationContext context = SpringApplication.run(DesignPatternApplication.class, args);
-		TestAOPDriver testAOPDriver = context.getBean(TestAOPDriver.class);
-		testAOPDriver.fun();
 
-	}
 
+    public static void main(String[] args) throws NoSuchMethodException {
+        ApplicationContext context = SpringApplication.run(com.example.designpattern.DesignPatternApplication.class, args);
+        TestAOPDriver testAOPDriver = context.getBean(TestAOPDriver.class);
+        testAOPDriver.fun();
+
+    }
 }
+

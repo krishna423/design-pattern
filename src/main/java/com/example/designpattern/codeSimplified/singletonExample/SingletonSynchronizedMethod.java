@@ -7,7 +7,7 @@ public class SingletonSynchronizedMethod {
     }
 
     public static synchronized   SingletonSynchronizedMethod getInstance() {
-        //why read is made thread safe , no need for read
+        //why all read are made thread safe , no need to make subsequent calls thread safe
         if(instance ==null){
             instance = new SingletonSynchronizedMethod();
         }
