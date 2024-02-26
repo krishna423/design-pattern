@@ -32,6 +32,7 @@ public class SingletonLazyUsingInnerClassBreakingPattern implements Cloneable, S
 
 
     //In order to avoid creation of multiple singleton bean using Serialization-deserialization
+
     Object readResolve(){
         return getSingletonLazy();
     }
