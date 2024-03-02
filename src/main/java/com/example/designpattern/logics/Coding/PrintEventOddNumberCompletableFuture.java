@@ -1,4 +1,4 @@
-package com.example.designpattern.logics;
+package com.example.designpattern.logics.Coding;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
