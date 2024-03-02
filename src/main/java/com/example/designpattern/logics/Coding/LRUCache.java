@@ -41,7 +41,7 @@ class LRUCache {
 
     public int get(int key) {
         if(mp.get(key)==null){
-            System.out.println("Get " + key  + " " + -1);
+            System.out.println("Get " + key  + " "  + -1);
             return -1;
         }
 

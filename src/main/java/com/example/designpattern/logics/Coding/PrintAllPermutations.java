@@ -1,26 +1,33 @@
 package com.example.designpattern.logics.Coding;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 public class PrintAllPermutations {
 
 
-    static void swap (int[] array, int i, int j ){
+    static void swap (Integer[] array, int i, int j ){
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
-    static void permutataions(int n, int array[], int index, List<List<Integer>> ans){
+    static void permutataions(int n, Integer array[], int index, List<List<Integer>> ans){
 
         if(index>n){
             return;
         }
         if(index == n){
-            List<Integer> list = new ArrayList<>();
-            for(int i=0;i<n;i++){
-                list.add(array[i]);
-            }
+            //List temp is only a wrapper : whenever array element is shifted , List element will be also shifted
+            //as temp list uses same array in background
+            List<Integer> temp = Arrays.asList(array);
+
+            List<Integer> list = new ArrayList<>(List.of(array));
+//            List<Integer> list = new ArrayList<>();
+//            for(int i=0;i<n;i++){
+//                list.add(array[i]);
+//            }
             ans.add(list);
             return;
         }
@@ -34,7 +41,7 @@ public class PrintAllPermutations {
     }
 
     public static void main(String[] args) {
-        int[] array = {1,2,3,4};
+        Integer[] array = {1,2,3,4};
         List<List<Integer>> ans = new ArrayList<>();
         permutataions(array.length, array,0,ans);
 
