@@ -107,4 +107,5 @@ class Address {
                 ", pinCode='" + pinCode + '\'' +
                 '}';
     }
+    char[] charPwd = {'p','a','s','s','w','o','r','d'};
 }
