@@ -1,5 +1,7 @@
 package com.example.designpattern.Practice;
 
+import java.util.Objects;
+
 public class Employee {
     private Long id;
     private String firstName;
