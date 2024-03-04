@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class FailFastList {
+//https://anmolsehgal.medium.com/fail-fast-and-fail-safe-iterations-in-java-collections-11ce8ca4180e#:~:text=Fail%2Dsafe%20iterators%20means%20they,modified%20while%20iterating%20over%20it.&text=As%20arrayLists%20are%20fail%2Dfast%20above%20code%20will%20throw%20an%20exception.
 
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
