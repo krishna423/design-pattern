@@ -12,7 +12,8 @@ public class GroupByStream {
 
         String input = "KrishnaKMaurya";
 
-        Map<String, Long> map =  Arrays.stream(input.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+        Map<String, Long> map =  Arrays.stream(input.split(""))
+                .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
         System.out.println("Frequency Map : " + map);
 
 
