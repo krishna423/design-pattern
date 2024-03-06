@@ -1,6 +1,5 @@
 package com.example.designpattern.logics.StreamAPIs;
 
-import org.apache.logging.log4j.util.SortedArrayStringMap;
 
 import java.util.ArrayList;
 import java.util.Arrays;

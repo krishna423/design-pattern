@@ -8,9 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-import javax.annotation.Resource;
-import javax.annotation.Resources;
-
 @SpringBootApplication
 @EnableAspectJAutoProxy
 public class DesignPatternApplication {
@@ -19,8 +16,8 @@ public class DesignPatternApplication {
 	private TestServiceImpl testService;
 	public static void main(String[] args) throws NoSuchMethodException {
 		ApplicationContext context = SpringApplication.run(DesignPatternApplication.class, args);
-		TestAOPDriver testAOPDriver = context.getBean(TestAOPDriver.class);
-		testAOPDriver.fun();
+//		TestAOPDriver testAOPDriver = context.getBean(TestAOPDriver.class);
+//		testAOPDriver.fun();
 
 	}
 

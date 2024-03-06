@@ -17,8 +17,8 @@ public class SpringRunner {
 
     public static void main(String[] args) throws NoSuchMethodException {
         ApplicationContext context = SpringApplication.run(com.example.designpattern.DesignPatternApplication.class, args);
-        TestAOPDriver testAOPDriver = context.getBean(TestAOPDriver.class);
-        testAOPDriver.fun();
+//        TestAOPDriver testAOPDriver = context.getBean(TestAOPDriver.class);
+//        testAOPDriver.fun();
 
     }
 }

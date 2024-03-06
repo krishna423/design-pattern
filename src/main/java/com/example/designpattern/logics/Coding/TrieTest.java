@@ -1,5 +1,8 @@
 package com.example.designpattern.logics.Coding;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -96,7 +99,8 @@ public class TrieTest {
 }
 
 
-
+@Getter
+@Setter
 class TrieNode {
     private TrieNode[] trieChildren;
     private List<String> phoneNo;
@@ -108,28 +112,5 @@ class TrieNode {
         isEndOfWord=false;
     }
 
-    public TrieNode[] getTrieChildren() {
-        return trieChildren;
-    }
-
-    public void setTrieChildren(TrieNode[] trieChildren) {
-        this.trieChildren = trieChildren;
-    }
-
-    public List<String> getPhoneNo() {
-        return phoneNo;
-    }
-
-    public void setPhoneNo(List<String> phoneNo) {
-        this.phoneNo = phoneNo;
-    }
-
-    public boolean isEndOfWord() {
-        return isEndOfWord;
-    }
-
-    public void setEndOfWord(boolean endOfWord) {
-        isEndOfWord = endOfWord;
-    }
 }
 
