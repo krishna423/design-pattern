@@ -2,6 +2,7 @@ package com.example.designpattern.logics.StreamAPIs;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class StreamJoining {
@@ -10,13 +11,13 @@ public class StreamJoining {
 
         List<DummyObject> stringList = Arrays.asList(new DummyObject("12121","3432"),new DummyObject("564574","hghghhf"));
 
+        //Using joining function
         String string = stringList.stream().map(x->x.getLastName()).collect(Collectors.joining("|"));
         System.out.println(string);
 
-        List<Integer> integerList = Arrays.asList(12,34,5,6,7,8,9,0);
-        List<Integer> evenNumbers = integerList.stream().filter( x-> {return x%2==0;}).collect(Collectors.toList());
-
-        System.out.println(evenNumbers);
+        //Using reduce function
+        Optional<String> reducedString = stringList.stream().map(x->x.getLastName()).reduce((x, y)-> x+y);
+        System.out.println(reducedString);
 
     }
 
