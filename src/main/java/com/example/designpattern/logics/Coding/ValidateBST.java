@@ -74,6 +74,11 @@ class Node{
         this.left = left;
         this.right = right;
     }
+    public Node(String dataString, Node left, Node right) {
+        this.data = Integer.parseInt(dataString);
+        this.left = left;
+        this.right = right;
+    }
 }
 
 
