@@ -54,7 +54,7 @@ public class NextPermutations {
         System.out.println(nextPermutation(arr1.length, arr1));
 
         int [] arr2 =  {1, 2, 3, 4, 5, 6};
-        System.out.println(nextPermutation(arr1.length, arr2));
+        System.out.println(nextPermutation(arr2.length, arr2));
 
 
     }

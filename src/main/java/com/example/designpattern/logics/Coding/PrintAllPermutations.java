@@ -35,16 +35,17 @@ public class PrintAllPermutations {
 
         for(int i=index;i<n;i++){
             swap(array,index,i);
-            permutataions(n,array,i+1,ans);
+            permutataions(n,array,index+1,ans);
             swap(array,i,index);
         }
     }
 
     public static void main(String[] args) {
-        Integer[] array = {1,2,3,4};
+        Integer[] array = {1,2,3};
         List<List<Integer>> ans = new ArrayList<>();
         permutataions(array.length, array,0,ans);
 
+        System.out.println(ans.size());
         System.out.println(ans);
 
 
