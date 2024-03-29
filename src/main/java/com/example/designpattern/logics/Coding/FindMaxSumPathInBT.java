@@ -9,22 +9,17 @@ public class FindMaxSumPathInBT {
 
 
     static int findMaxPathSum(Node root){
-        //your code goes here
         if(root == null){
-            return -100000;
+            return 0;
         }
         //System.out.println(root.data);
-        int l_sum = findMaxPathSum(root.left);
-        int r_sum = findMaxPathSum(root.right);
-        int subTreeBranchMax = Math.max(l_sum,r_sum);
-        int maxAns = Math.max( subTreeBranchMax + root.data , root.data);
+        int l_sum = Math.max(0, findMaxPathSum(root.left));
+        int r_sum = Math.max(0, findMaxPathSum(root.right));
 
-        int maxPath = Math.max(maxAns, l_sum+r_sum+root.data);
-        if(globalMax < maxPath){
-            globalMax = maxPath;
+        if(globalMax < l_sum+r_sum+root.data){
+            globalMax = l_sum+r_sum+root.data;
         }
-        //System.out.println(l_sum+ " " +r_sum + " " + maxAns + " " + maxPath +  " " + globalMax);
-        return maxAns;
+        return Math.max(l_sum,r_sum)+ root.data;
     }
 
     //Function to return maximum path sum from any node in a tree.
