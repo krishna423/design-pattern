@@ -4,7 +4,7 @@ package com.example.designpattern.logics.Coding.Tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Utility {
+public class BinaryTree {
 
     static Node buildTree(String [] arr){
         Node root = new Node(arr[0],null,null);
@@ -26,20 +26,30 @@ public class Utility {
         return root;
     }
 
-    static class Node{
-        int data;
-        Node left;
-        Node right;
+    static void inOrder(Node root){
+        if(root==null){
+            return;
+        }
+        inOrder(root.left);
+        System.out.print(root.data + " ");
+        inOrder(root.right);
+    }
 
-        public Node(int data, Node left, Node right) {
-            this.data = data;
-            this.left = left;
-            this.right = right;
-        }
-        public Node(String dataString, Node left, Node right) {
-            this.data = Integer.parseInt(dataString);
-            this.left = left;
-            this.right = right;
-        }
+
+}
+class Node{
+    int data;
+    Node left;
+    Node right;
+
+    public Node(int data, Node left, Node right) {
+        this.data = data;
+        this.left = left;
+        this.right = right;
+    }
+    public Node(String dataString, Node left, Node right) {
+        this.data = Integer.parseInt(dataString);
+        this.left = left;
+        this.right = right;
     }
 }
