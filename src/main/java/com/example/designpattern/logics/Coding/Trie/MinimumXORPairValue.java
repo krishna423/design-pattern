@@ -1,26 +1,26 @@
-package com.example.designpattern.logics.Coding;
+package com.example.designpattern.logics.Coding.Trie;
 
-public class MaximumXORPairValue {
+public class MinimumXORPairValue {
 
 
     static private Node root;
-    public MaximumXORPairValue (){
-        MaximumXORPairValue.root = new Node();
+
+    public MinimumXORPairValue (){
+        MinimumXORPairValue.root = new Node();
     }
 
 
-    public static int maximumXOROptimizedWay(int [] arr) {
+    public static int minimumXOROptimizedWay(int [] arr) {
 
-        int maxXOR = Integer.MIN_VALUE;
-        for (int i = 0; i < arr.length; i++) {
+        int minXOR = Integer.MAX_VALUE;
+
+        insert(arr[0]);
+        for (int i = 1; i < arr.length; i++) {
+            minXOR = Math.min( minXOR, getMin(arr[i]));
             insert(arr[i]);
         }
-        for (int i = 0; i < arr.length; i++) {
-            maxXOR = Math.max( maxXOR, getMax(arr[i]));
-        }
 
-
-        return  maxXOR;
+        return  minXOR;
     }
 
     static void  insert(int k){
@@ -37,22 +37,21 @@ public class MaximumXORPairValue {
         head.value=k;
     }
 
-    static int getMax(int k){
+    static int getMin(int k){
         Node head = root;
         int bit ;
         for (int i=31;i>=0;i--){
             bit = (k & (1<< i))!=0 ? 1 :0;
 
-            if(head.children[1-bit]!=null){
-                head = head.children[1-bit];
-            }else{
+            if(head.children[bit]!=null){
                 head = head.children[bit];
+            }else{
+                head = head.children[1-bit];
             }
         }
         return k^ head.value;
     }
 
-    
 
 
 
@@ -60,30 +59,32 @@ public class MaximumXORPairValue {
 
 
 
-    public static int maximumXOR(int [] arr) {
 
-        int maxXOR = Integer.MIN_VALUE;
+    public static int minimumXOR(int [] arr) {
+
+        int minXOR = Integer.MAX_VALUE;
 
         for (int i = 0; i < arr.length-1; i++) {
             for (int j = i+1; j < arr.length; j++) {
                 int xor = arr[i] ^ arr[j];
-                maxXOR = Math.max(maxXOR, xor);
+                minXOR = Math.min(minXOR, xor);
             }
         }
-        return  maxXOR;
+        return  minXOR;
     }
 
 
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5, 6, 7};
-        System.out.println(maximumXOR(arr));
-        System.out.println(maximumXOROptimizedWay(arr));
+        int arr[] = {9,5,3};
+        System.out.println(minimumXOR(arr));
+        MinimumXORPairValue minimumXORPairValue = new MinimumXORPairValue();
+        System.out.println(minimumXORPairValue.minimumXOROptimizedWay(arr));
     }
 
 
     static class Node{
-        private Node [] children;
+        private Node[] children;
         private int value;
 
         public Node() {

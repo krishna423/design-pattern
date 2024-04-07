@@ -22,7 +22,7 @@ public class LCAInBST {
 
     public static void main(String[] args) {
         String [] arr = {"6", "3", "8", "2", "4", "7","10", "1"};
-        Node root = BinaryTree.buildTree(arr);
+        Node root = BinaryTreeUtility.buildTree(arr);
         System.out.println(LCA(root,4,7).data);
 
         System.out.println(LCA(root,1,2).data);

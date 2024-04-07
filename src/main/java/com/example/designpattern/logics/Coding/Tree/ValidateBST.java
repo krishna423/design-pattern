@@ -1,4 +1,4 @@
-package com.example.designpattern.logics.Coding;
+package com.example.designpattern.logics.Coding.Tree;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -63,22 +63,6 @@ public class ValidateBST {
 
     }
 
-}
-class Node{
-    int data;
-    Node left;
-    Node right;
-
-    public Node(int data, Node left, Node right) {
-        this.data = data;
-        this.left = left;
-        this.right = right;
-    }
-    public Node(String dataString, Node left, Node right) {
-        this.data = Integer.parseInt(dataString);
-        this.left = left;
-        this.right = right;
-    }
 }
 
 

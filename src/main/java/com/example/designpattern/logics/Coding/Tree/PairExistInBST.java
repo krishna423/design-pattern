@@ -33,7 +33,7 @@ public class PairExistInBST {
 
     public static void main(String[] args) {
         String [] arr = {"10", "5", "18", "2", "9", "15", "19", "N", "4", "8", "N", "8"};
-        Node root = BinaryTree.buildTree(arr);
+        Node root = BinaryTreeUtility.buildTree(arr);
         System.out.println(isPairPresent(root,10));
     }
 

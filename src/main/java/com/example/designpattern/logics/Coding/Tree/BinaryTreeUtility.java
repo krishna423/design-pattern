@@ -4,7 +4,7 @@ package com.example.designpattern.logics.Coding.Tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BinaryTree {
+public class BinaryTreeUtility {
 
     static Node buildTree(String [] arr){
         Node root = new Node(arr[0],null,null);

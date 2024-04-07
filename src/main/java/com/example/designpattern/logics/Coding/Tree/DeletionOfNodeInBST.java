@@ -60,9 +60,9 @@ public class DeletionOfNodeInBST {
 
     public static void main(String[] args) {
         String [] arr = {"6", "3", "8", "2", "4", "7","10", "1"};
-        Node root = BinaryTree.buildTree(arr);
+        Node root = BinaryTreeUtility.buildTree(arr);
         root = deleteNode(root,6);
-        BinaryTree.inOrder(root);
+        BinaryTreeUtility.inOrder(root);
     }
 
 

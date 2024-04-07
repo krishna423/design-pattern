@@ -1,6 +1,5 @@
-package com.example.designpattern.logics.Coding;
+package com.example.designpattern.logics.Coding.Trie;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MaximumXORArrayElement {
