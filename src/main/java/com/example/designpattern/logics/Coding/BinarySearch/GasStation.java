@@ -1,4 +1,4 @@
-package com.example.designpattern.logics.Coding;
+package com.example.designpattern.logics.Coding.BinarySearch;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

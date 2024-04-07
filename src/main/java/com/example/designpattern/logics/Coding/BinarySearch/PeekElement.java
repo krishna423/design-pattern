@@ -1,4 +1,4 @@
-package com.example.designpattern.logics.Coding;
+package com.example.designpattern.logics.Coding.BinarySearch;
 
 public class PeekElement {
 
