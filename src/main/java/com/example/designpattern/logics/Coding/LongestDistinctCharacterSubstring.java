@@ -33,7 +33,7 @@ public class LongestDistinctCharacterSubstring {
 //            begin = start;
 //            end = S.length();
 //        }
-        mx = Math.max(mx, S.length()-1-start );
+        mx = Math.max(mx, S.length()-start );
 
         //System.out.println(S.substring(begin,end));
 

@@ -30,10 +30,12 @@ public class TaskScheduler {
             map.put(tasks[i], v );
         }
 
-        for(Map.Entry<Character,Integer> mapEntry : map.entrySet()){
-            //System.out.println( mapEntry.getKey()+ " " +mapEntry.getValue());
-            priorityQueue.add(new Pair<>(mapEntry.getKey(), mapEntry.getValue()));
-        }
+//        for(Map.Entry<Character,Integer> mapEntry : map.entrySet()){
+//            //System.out.println( mapEntry.getKey()+ " " +mapEntry.getValue());
+//            priorityQueue.add(new Pair<>(mapEntry.getKey(), mapEntry.getValue()));
+//        }
+        map.forEach((x,y)-> priorityQueue.add(new Pair<>(x, y)));
+
 
         List<Pair<Character,Integer>> list = new ArrayList<>();
         //List<Pair<Character,Integer>> ansList =new ArrayList<>();

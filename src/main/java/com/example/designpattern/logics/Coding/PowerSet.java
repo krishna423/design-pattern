@@ -1,6 +1,5 @@
 package com.example.designpattern.logics.Coding;
 
-import org.apache.catalina.LifecycleState;
 
 import java.util.*;
 
@@ -29,13 +28,6 @@ public class PowerSet {
         System.out.println( generatePowerSet("abcd") );
         System.out.println( generatePowerSet("geeks") );
 
-        Map<Character,Character> map = new HashMap<>();
-
-        for (Map.Entry<Character, Character> characterCharacterEntry : map.entrySet()) {
-            Character key = characterCharacterEntry.getKey();
-            Character value = characterCharacterEntry.getValue();
-            
-        }
     }
 
 
