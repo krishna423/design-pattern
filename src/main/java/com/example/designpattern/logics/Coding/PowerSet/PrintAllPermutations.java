@@ -15,10 +15,7 @@ public class PrintAllPermutations {
     }
     static void permutataions(int n, Integer array[], int index, List<List<Integer>> ans){
 
-        if(index>n){
-            return;
-        }
-        if(index == n){
+        if(index == n-1){
             //List temp is only a wrapper : whenever array element is shifted , List element will be also shifted
             //as temp list uses same array in background
             List<Integer> temp = Arrays.asList(array);
@@ -41,7 +38,7 @@ public class PrintAllPermutations {
     }
 
     public static void main(String[] args) {
-        Integer[] array = {1,2,3};
+        Integer[] array = {1,2,3,4};
         List<List<Integer>> ans = new ArrayList<>();
         permutataions(array.length, array,0,ans);
 
