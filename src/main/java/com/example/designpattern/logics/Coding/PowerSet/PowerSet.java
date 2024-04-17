@@ -23,10 +23,36 @@ public class PowerSet {
         return ansList;
     }
 
+
+    static void generateString(String a, int index,String subString,List<String> ansList){
+        int n = a.length();
+        if(n==index){
+            ansList.add(subString);
+            return;
+        }
+
+        generateString(a,index+1,subString,ansList);
+        generateString(a,index+1,subString+a.charAt(index),ansList);
+    }
+
+    static List<String> generatePowerSetUsingRecursion(String a) {
+        List<String> ansList = new ArrayList<>();
+        int n = a.length();
+        generateString(a,0,"",ansList);
+        return ansList;
+    }
+
+
+
+
+
     public static void main(String[] args) {
         System.out.println( generatePowerSet("qwe") );
+        System.out.println( generatePowerSetUsingRecursion("qwe") );
         System.out.println( generatePowerSet("abcd") );
+        System.out.println( generatePowerSetUsingRecursion("abcd") );
         System.out.println( generatePowerSet("geeks") );
+        System.out.println( generatePowerSetUsingRecursion("geeks") );
 
     }
 
