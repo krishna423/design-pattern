@@ -1,4 +1,4 @@
-package com.example.designpattern.interview;
+package com.example.designpattern.company;
 
 public class RemoveN {
 
