@@ -14,15 +14,16 @@ public class BlackRockPickNotPick {
             finalAnsList.add(new ArrayList<>(ansList));
            return;
         }
-        if(index == arr.length){
+
+        if( sum < 0 || index <0){
             return;
         }
 
 
-        findSubArray(arr, index+1, sum ,ansList,finalAnsList);
+        findSubArray(arr, index-1, sum ,ansList,finalAnsList);
 
         ansList.add(arr[index]);
-        findSubArray(arr, index+1, sum-arr[index],ansList,finalAnsList);
+        findSubArray(arr, index-1, sum-arr[index],ansList,finalAnsList);
         ansList.remove(ansList.size()-1);
 
     }
@@ -33,7 +34,7 @@ public class BlackRockPickNotPick {
         List<Integer> ansList = new ArrayList<>();
         List<List<Integer>> finalAnsList = new ArrayList<>();
 
-        findSubArray(arr,0,sum,ansList,finalAnsList);
+        findSubArray(arr, arr.length -1,sum,ansList,finalAnsList);
 
         System.out.println(finalAnsList);
 
