@@ -1,12 +1,6 @@
 package com.example.designpattern.logics.Coding.dp;
 
-import java.io.ByteArrayInputStream;
-import java.lang.annotation.Target;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.stream.Collectors;
-
-public class SubSetSumProblem {
+public class TwoD_DP_base_problem_SubSetSumProblem {
 
 
     //Why not 1D array used here
@@ -22,7 +16,9 @@ public class SubSetSumProblem {
 //       /  \                 As dp[0]=false, return false, without calculating left right
 //  (-1,9)  (-1,6)
 
-
+// If we are on )th index and still exploring -1 index then our time would be 2 times
+// As on the leasf node- contains half of the nodex
+// so it more better to hold on 0th index rather than exploring -ve index
 
 
 
