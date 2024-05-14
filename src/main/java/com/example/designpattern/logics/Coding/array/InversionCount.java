@@ -1,4 +1,4 @@
-package com.example.designpattern.logics.Coding.BinarySearch;
+package com.example.designpattern.logics.Coding.array;
 
 public class InversionCount {
 

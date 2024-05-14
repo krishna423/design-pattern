@@ -1,4 +1,4 @@
-package com.example.designpattern.logics.Coding;
+package com.example.designpattern.logics.Coding.array;
 
 import java.util.ArrayList;
 import java.util.Arrays;

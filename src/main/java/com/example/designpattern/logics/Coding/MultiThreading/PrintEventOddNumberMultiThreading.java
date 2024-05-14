@@ -1,4 +1,4 @@
-package com.example.designpattern.logics.Coding;
+package com.example.designpattern.logics.Coding.MultiThreading;
 
 public class PrintEventOddNumberMultiThreading {
 
