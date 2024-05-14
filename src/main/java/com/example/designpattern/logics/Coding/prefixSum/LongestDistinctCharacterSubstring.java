@@ -1,4 +1,4 @@
-package com.example.designpattern.logics.Coding;
+package com.example.designpattern.logics.Coding.prefixSum;
 
 import java.util.HashMap;
 import java.util.Map;
