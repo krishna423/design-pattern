@@ -18,9 +18,9 @@ public class PrintAllPermutations {
         if(index == n-1){
             //List temp is only a wrapper : whenever array element is shifted , List element will be also shifted
             //as temp list uses same array in background
-            List<Integer> temp = Arrays.asList(array);
+//            List<Integer> temp = Arrays.asList(array);
 
-            List<Integer> list = new ArrayList<>(List.of(array));
+            List<Integer> list = new ArrayList<>(Arrays.asList(array));
 //            List<Integer> list = new ArrayList<>();
 //            for(int i=0;i<n;i++){
 //                list.add(array[i]);
