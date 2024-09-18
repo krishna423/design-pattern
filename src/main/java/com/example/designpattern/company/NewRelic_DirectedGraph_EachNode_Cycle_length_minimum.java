@@ -9,21 +9,20 @@ public class NewRelic_DirectedGraph_EachNode_Cycle_length_minimum {
 
     public static void main(String[] args) {
         int n=4;
-        int m = 4;
-        int [] source = {1,2,3,4};
-        int [] dest = {2,3,1,3};
-        int [] w = {5,10,15,20};
+        int m = 5;
+        int [] source = {1,2,3,4,2};
+        int [] dest = {2,3,1,3,1};
+        int [] w = {5,10,15,20,100};
 
         fun(n,m,source,dest,w);
 
     }
 
-    static void fun(int input1, int input2, int[] input3, int[] input4, int[] input5) {
+    static void fun(int n1, int edges, int[] sourceArray, int[] destArray, int[] weightArray) {
 
-        List<List<Node>> adjList = getAdjList(input1, input2, input3, input4, input5);
+        List<List<Node>> adjList = getAdjList(n1, edges, sourceArray, destArray, weightArray);
+
         int n = adjList.size();
-
-
         for (int i = 1; i < n; i++) {
             System.out.println(dijkstra(adjList, i));
         }
