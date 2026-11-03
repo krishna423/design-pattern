@@ -1,4 +1,4 @@
-package com.example.designpattern.logics.String;
+package com.example.designpattern.logics.ImmutableClassExample;
 
 import java.util.ArrayList;
 import java.util.Arrays;

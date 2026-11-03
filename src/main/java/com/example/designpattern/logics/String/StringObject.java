@@ -32,7 +32,7 @@ public class StringObject {
         //st2 and st1.intern(), st3.intern() point to same string constant which is present in SCP
         //st1, st3 points their own objects
         System.out.println(Integer.toHexString(System.identityHashCode(st1)));
-
+        System.out.println(Integer.toHexString(System.identityHashCode(st2)));
 
         System.out.println(Integer.toHexString(System.identityHashCode(st3)));
         System.out.println(Integer.toHexString(System.identityHashCode(st3.intern())));
