@@ -62,6 +62,25 @@ public class StringObject {
         System.out.println(st1.intern().equals(st4.intern()));
 
 
+        System.out.println("----------------------------------------");
+        String st5 = "Test-" + "XYZ";
+        String temp = "XYZ";
+        String st6 = "Test-" + temp;
+
+
+        System.out.println(st2 == st5);
+        System.out.println(st2 == st6);
+
+
+
+
+        String s2 = "Hello ";
+        String s3 = "Java";
+
+        String s1 = s2 + s3;
+        System.out.println(s1); // Hello Java
+        System.out.println(s2); // Hello
+        System.out.println(s3); //  Java
 //        System.out.println(st1.intern().hashCode() == st3.hashCode());
 //        System.out.println(st1.hashCode() == st2.hashCode());
 //        System.out.println(st1.intern().hashCode() == st2.hashCode());
