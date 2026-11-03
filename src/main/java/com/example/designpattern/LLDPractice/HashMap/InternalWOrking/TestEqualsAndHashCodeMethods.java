@@ -1,9 +1,34 @@
-package com.example.designpattern.logics.String;
+package com.example.designpattern.LLDPractice.HashMap.InternalWOrking;
 
 import java.util.*;
 
 public class TestEqualsAndHashCodeMethods {
-
+     /* Java Collection Comparison:
+     *
+     * 1. HASH-BASED COLLECTIONS (hashCode() + equals())
+     *    - HashSet
+     *    - LinkedHashSet
+     *    - HashMap
+     *    - LinkedHashMap
+     *    - Hashtable -- ThreadSafe - Legacy
+     *    - ConcurrentHashMap -- Threadsafe
+     *
+     *    hashCode() -> Identifies the bucket.
+     *    equals()   -> Checks logical equality / duplicate keys or elements.
+     *
+     * 2. SORTED COLLECTIONS (compareTo() / compare())
+     *    - TreeSet
+     *    - TreeMap
+     *    - PriorityQueue
+     *
+     *    compareTo() / compare() -> Maintains sorting order.
+     *    For TreeSet and TreeMap, result 0 means duplicate element/key.
+     *
+     * 3. LIST COLLECTIONS
+     *    - ArrayList
+     *    - LinkedList
+     *   No duplicate checking
+     */
 
     public static void main(String[] args) {
 
@@ -32,6 +57,7 @@ public class TestEqualsAndHashCodeMethods {
                                  EmployeeWithEqualsAndHashCode employeeWithEqualsAndHashCode1, EmployeeWithEqualsAndHashCode employeeWithEqualsAndHashCode2){
 
         Set<EmployeeWithEqualsOnly> employeeWithEqualsOnlyList = new HashSet<>();
+
         employeeWithEqualsOnlyList.add(employeeWithEqualsOnly1);
         employeeWithEqualsOnlyList.add(employeeWithEqualsOnly2);
 
