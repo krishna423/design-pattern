@@ -1,6 +1,6 @@
 package com.example.designpattern.logics.Coding.dp;
 
-public class TwoD_DP_base_problem_SubSetSumProblem {
+public class DP_TwoD_BaseProblme_SubSetSumProblem {
 
 
     //Why not 1D array used here
@@ -22,22 +22,24 @@ public class TwoD_DP_base_problem_SubSetSumProblem {
 
 
 
-    static int isSubsetSumUtil(int N, int arr[], int sum, int [][] dp){
+    static int isSubsetSumUtil(int n, int[] arr, int targetSum, int[][] dp){
         // code here
-        //System.out.println("index : " + N + "  sum :"  + sum);
-        if(sum==0){
-            return 1;
-        }
-        if(N<0 || sum<0){
-            return 0;
+        //System.out.println("index : " + n + "  targetSum :"  + targetSum);
+
+        if(n<0 || targetSum<0){
+            return 0; // false
         }
 
+        if(targetSum==0){
+            return 1; // true
+        }
 
-        if(dp[N][sum]!=-1) return dp[N][sum];
-        // if(arr[N] >sum ){
-        //     return dp[N]= false;
-        // }
-        return dp[N][sum] = (isSubsetSumUtil(N-1,arr,sum,dp)==1 || isSubsetSumUtil(N-1,arr,sum-arr[N],dp)==1) ? 1 : 0;
+        if(dp[n][targetSum]!=-1) return dp[n][targetSum];
+
+        int notTaken = isSubsetSumUtil(n-1, arr,targetSum, dp);
+        int taken = isSubsetSumUtil(n-1, arr,targetSum-arr[n] ,dp);
+
+        return dp[n][targetSum] = (taken==1 || notTaken==1) ? 1 : 0;
 
     }
 

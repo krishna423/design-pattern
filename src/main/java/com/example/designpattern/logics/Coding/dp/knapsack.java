@@ -2,28 +2,6 @@ package com.example.designpattern.logics.Coding.dp;
 
 public class knapsack {
 
-
-    static int knapSackUtil(int bagRemainingWeight, int wt[], int val[], int n, int [][] dp)
-    {
-       // System.out.println(" W" + bagRemainingWeight + "  n " + n );
-
-        if(bagRemainingWeight==0) return 0;
-        if(n<0 || bagRemainingWeight <0) return 0;
-
-        if(dp[n][bagRemainingWeight]!=-1) return dp[n][bagRemainingWeight];
-        int taken =0;
-        int notTaken = 0 +  knapSackUtil(bagRemainingWeight, wt, val, n-1,dp);
-        if(bagRemainingWeight>=wt[n]) {
-            taken = val[n] + knapSackUtil(bagRemainingWeight - wt[n], wt, val, n - 1,dp);
-        }
-        //System.out.println( notTaken + "  " + taken);
-        return dp[n][bagRemainingWeight] = Math.max(notTaken,taken);
-    }
-
-
-
-
-
     static int knapSackUtilOptimzed(int bagRemainingWeight, int wt[], int val[], int n, int [][] dp)
     {
         // System.out.println(" W" + bagRemainingWeight + "  n " + n );
@@ -34,11 +12,14 @@ public class knapsack {
         }
 
         if(dp[n][bagRemainingWeight]!=-1) return dp[n][bagRemainingWeight];
+
         int taken =0;
+
         int notTaken = 0 +  knapSackUtilOptimzed(bagRemainingWeight, wt, val, n-1,dp);
         if(bagRemainingWeight>=wt[n]) {
             taken = val[n] + knapSackUtilOptimzed(bagRemainingWeight - wt[n], wt, val, n - 1,dp);
         }
+
         //System.out.println( notTaken + "  " + taken);
         return dp[n][bagRemainingWeight] = Math.max(notTaken,taken);
     }
