@@ -1,6 +1,6 @@
 package com.example.designpattern.logics.Coding.dp.Fibonacci;
 
-public class FibonacciSeriesRecursion {
+public class Recursion {
 
 //Value   0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144
 //Index   0, 1, 2, 3, 4, 5, 6, 7,  8,  9,  10, 11, 12
