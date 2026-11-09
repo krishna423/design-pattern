@@ -7,18 +7,14 @@ public class DP_TwoD_BaseProblme_SubSetSumProblem {
 
 // Example   {3, 2, 4, 5} ArraySize = 4 , Target = 9
 //                        (3,9)
-//                       /
-//                    (2,9)
-//                    /                 \
-//                 (1,9)               (1,5) But dp[1]=false, return false
-//   Not Taken   /              \Taken
-//         (0,9) dp[0]=false  (0,9-2=7)
-//       /  \                 As dp[0]=false, return false, without calculating left right
-//  (-1,9)  (-1,6)
-
-// If we are on )th index and still exploring -1 index then our time would be 2 times
-// As on the leasf node- contains half of the nodex
-// so it more better to hold on 0th index rather than exploring -ve index
+//                       /     \
+//                    (2,9)    (2,4)
+//                   /    \
+//               (1,9)    (1,5)
+//                /
+//           (0,9)
+//         /   \
+//   (-1,9)   (-1,6)
 
 
 
