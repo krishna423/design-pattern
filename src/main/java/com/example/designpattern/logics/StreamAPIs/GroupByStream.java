@@ -13,7 +13,9 @@ public class GroupByStream {
         String input = "KrishnaKMaurya";
 
         Map<String, Long> map =  Arrays.stream(input.split(""))
-                .collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+                .collect(
+                        Collectors.groupingBy( Function.identity(), Collectors.counting() )
+                );
         System.out.println("Frequency Map : " + map);
 
 
@@ -36,9 +38,33 @@ public class GroupByStream {
                 Collectors.groupingBy(Employee::getDept, Collectors.maxBy(comparator))
         );
 
+        System.out.println("\n----------------------------------------------------------");
         System.out.println(" Group max element : " + map2);
 
 
+        Map<String, Set<Employee>> map3 =  employeeList.stream().collect(
+                Collectors.groupingBy(employee -> employee.getDept(), Collectors.toSet())
+        );
 
+        System.out.println("\n----------------------------------------------------------");
+        System.out.println(" Group List conversion : " + map3);
+
+
+        System.out.println("\n----------------------------------------------------------");
+
+        //Map to list
+        System.out.println( "Map to Set --- Keys Set" + map3.keySet());
+        System.out.println( "Map to Set --- Values Set" + map3.values());
+
+
+
+    }
+
+    static class CustomCOmparator implements Comparator<Employee>{
+
+        @Override
+        public int compare(Employee o1, Employee o2) {
+            return o1.getSalary() < o2.getSalary() ? -1 : 0 ;
+        }
     }
 }
