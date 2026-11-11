@@ -57,6 +57,12 @@ public class GroupByStream {
         System.out.println( "Map to Set --- Values Set" + map3.values());
 
 
+        //Reduce function
+
+        String reduceValues =  Arrays.stream(input.split("")).reduce("|" , (a,b)->a+b);
+
+        System.out.println("Reduce function : "  + reduceValues);
+
 
     }
 
