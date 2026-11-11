@@ -16,12 +16,15 @@ public class SingletonLazyUsingInnerClassBreakingPattern implements Cloneable, S
 //    all subsequent concurrent invocations of the getInstance will return the same correctly initialized INSTANCE
 //    without incurring any additional synchronization overhead
 
+
+    //To restrict Java reflection API
     private SingletonLazyUsingInnerClassBreakingPattern(){
         if(SingletonHolder.singletonLazy != null){
             throw new RuntimeException(" New object can not be created using reflection API");
         }
     }
 
+    //To restrict cloning
     @Override
     public SingletonLazyUsingInnerClassBreakingPattern clone() {
         try {
@@ -40,7 +43,7 @@ public class SingletonLazyUsingInnerClassBreakingPattern implements Cloneable, S
 
 
     //In order to avoid creation of multiple singleton bean using Serialization-deserialization
-
+    //To restrict Serialization
     Object readResolve(){
         return getSingletonLazy();
     }
